@@ -1,0 +1,10 @@
+topic: ~QA ()
+language: enu
+concept:(greetings) ^rand[hi hello "hey there"]
+concept:(stop) ["that's all" "stop"]
+
+u:(~greetings)  ~greetings
+u:(What is your name?) My name is Pepper! Nice to meet you.
+u:(that's all)  please wait $stop_talking=yes
+u:(stop) please wait $stop_talking=yes
+
